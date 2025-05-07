@@ -46,7 +46,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/login_page/login.css" />
     <title>Login</title>
   </head>
   <body>
@@ -54,7 +54,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
         <div class="forms-container">
             <div class="signin-signup">
                 <form action="" class="sign-in-form" method="POST">
-                    <h2 class="title">Sign in</h2>
+                    <h2 class="title">Login</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <input type="text" name="email" placeholder="Email" />
@@ -65,7 +65,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
                         <span class="toggle-password" onclick="togglePassword('password')"><i class="bi bi-eye"></i></span>
                     </div>
                     <input type="submit" value="Login" class="btn solid" />
-                    <p class="social-text">Or Sign in with social platforms</p>
+                    <p class="social-text">Ou faça Login com as suas redes sociais</p>
                     <div class="social-media">
                         <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-icon"><i class='bi bi-twitter' ></i></a>
@@ -74,10 +74,10 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
                     </div>
                 </form>
                 <form action="registro.php" class="sign-up-form" method="POST">
-                    <h2 class="title">Sign up</h2>
+                    <h2 class="title">Cadastre-se</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username_signup" placeholder="Username" required />
+                        <input type="text" name="username_signup" placeholder="Nome de Usuário" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
@@ -85,12 +85,12 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
                     </div>
                     <div class="input-field password-container">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="password_signup" id="password-signup" placeholder="Password" required />
+                        <input type="password" name="password_signup" id="password-signup" placeholder="Senha" required />
                         <span class="toggle-password" onclick="togglePassword('password-signup')">
                             <i class="bi bi-eye"></i>
                         </span>
                     </div>
-                    <input type="submit" class="btn" value="Sign up" />
+                    <input type="submit" class="btn" value="Cadastre-se" />
                     <div class="social-media">
                         <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
@@ -104,24 +104,24 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h3>New here ?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ex ratione. Aliquid!</p>
-                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                    <h3>Novo aqui?</h3>
+                    <p>Cadastre-se e veja tudo o que está acontecendo na sua escola!</p>
+                    <button class="btn transparent" id="sign-up-btn">Cadastre-se</button>
                 </div>
                 <img src="./assets/CPS.png" class="image" alt="" />
             </div>
             <div class="panel right-panel">
                 <div class="content">
-                    <h3>One of us ?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laboriosam ad deleniti.</p>
-                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                    <h3>Já é um de nós?</h3>
+                    <p>Faça seu login e continue vendo o que está acontecendo na sua escola!</p>
+                    <button class="btn transparent" id="sign-in-btn">Login</button>
                 </div>
                 <img src="./assets/gremio.png" class="image" alt="" />
             </div>
         </div>
     </div>
 
-    <script src="./js/login_senha.js"></script>
-    <script src="./js/login_responsivo.js"></script>
+    <script src="./js/login_page/login_senha.js"></script>
+    <script src="./js/login_page/login_responsivo.js"></script>
   </body>
 </html>

@@ -10,7 +10,7 @@ if(!isset($_SESSION)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/admin_page/nav_adm.css">
     <title>teste</title>
 </head>
 <body>
@@ -77,8 +77,10 @@ if(!isset($_SESSION)) {
         </nav>
     </header>
 
+    <br><br><br><br><br><br><br><br><br><br><br>
+
     <h1>Você é um Administrador</h1>
 
-    <script src="./js/nav.js"></script>
+    <script src="./js/admin_page/nav_adm.js"></script>
 </body>
 </html>

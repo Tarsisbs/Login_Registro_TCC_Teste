@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nome = $mysqli->real_escape_string($_POST["username_signup"]);
     $email = $mysqli->real_escape_string($_POST["email_signup"]);
-    $senha = $mysqli->real_escape_string($_POST["password_signup"]); // Senha sem criptografia
+    $senha = $mysqli->real_escape_string($_POST["password_signup"]);
 
     // Verifica se o email já está cadastrado
     $sql_verifica = "SELECT * FROM usuários WHERE email = '$email'";
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($mysqli->query($sql)) {
         echo "Cadastro realizado com sucesso! <a href='index.php'>Fazer login</a>";
     } else {
-        echo "Erro ao cadastrar: " . $mysqli->error;
+        echo "Erro ao cadastrar, tente novamente." . $mysqli->error;
     }
 }
 ?>

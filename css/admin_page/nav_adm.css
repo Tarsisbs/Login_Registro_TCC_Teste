@@ -69,8 +69,8 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(17, 16, 24);
-  z-index: var(--z-fixed);
+  background-color: hsl(0, 0%, 0%);
+  z-index: 0 !important;
 }
 
 .nav {
@@ -79,6 +79,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px 30px solid rgb(170, 44, 44);;
 }
 
 .nav__logo {
